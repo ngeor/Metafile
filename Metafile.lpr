@@ -48,9 +48,9 @@ var
     Font, OldFont: HFont;
     LogFont: TLogFont;
     pt: TPoint;
-    i, x, y: integer;
+    i, x, y: Integer;
     Pen, OldPen: HPEN;
-    u: extended;
+    u: Extended;
   begin
     Pen := CreatePen(PS_SOLID, 10, RGB(255, 0, 0));
     OldPen := SelectObject(DC, Pen);
@@ -94,7 +94,7 @@ var
   var
     DC, ReferenceDC: HDC;
     R: TRect;
-    iWidthMM, iHeightMM, iWidthPels, iHeightPels: longint;
+    iWidthMM, iHeightMM, iWidthPels, iHeightPels: Longint;
   begin
     if meta <> 0 then
     begin
